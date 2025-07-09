@@ -6,11 +6,8 @@
     box-sizing: border-box;
 }
 
-body{
-    background: rgb(170, 170, 170);
-}
-
 .container{
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -21,7 +18,7 @@ body{
   font-style: normal;
 }
 
-..poppins-regular {
+.poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -50,4 +47,264 @@ body{
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.btn-container, .btn-primary{
+    background: rgb(224, 44, 109);
+    border: none;
+    color: #fff;
+    display: inline-block;
+    border-radius: 41px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+/* Nav Section */
+nav{
+    padding: 50px 130px;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title{
+    color: rgb(58, 58, 58);
+    font-size: 1.5rem;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.nav-menu{
+    align-items: start;
+}
+
+.nav-menu li{
+    list-style: none;
+    margin-right: 34px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.nav-icons{
+    gap: 34px;
+    align-items: center;
+    
+}
+
+.search-icon{
+    margin-top: -5px;
+}
+
+
+/* Banner Section */
+.banner{
+    margin-top: 50px;
+    
+    padding-bottom: 50px;
+}
+
+.banner-content{
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 130px;
+    
+    padding: 0px 130px;
+
+}
+
+.banner-text{
+    max-width: 50%;
+}
+
+.banner-title{
+    margin-top: 120px;
+    margin-bottom: 16px;
+    color: rgb(58, 58, 58);
+    font-size: 3.25rem;
+    line-height: 70px;
+}
+
+.banner-description{
+    max-width: 70%;
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.banner-text .btn-container{
+    display: inline-block;
+    padding: 10px 24px;
+}
+
+.btn-container .btn-primary{
+    margin-right: 15px;
+    
+}
+
+.banner-img-container{
+    width: 475px;
+    height: 475px;
+    padding-bottom: 100px;
+    background: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+}
+
+.banner-img-container img{
+    max-width: 100%;
+    padding-top: 30px;
+}
+
+.sponsors-logo{
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px solid rgb(58, 58, 58, 0.2);
+    border-bottom: 1px solid rgb(58, 58, 58, 0.05);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    margin-bottom: 20px;
+}
+
+.sponsors-logo div{
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+    nav, .banner-content{
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-collapse{
+        display: block;
+    }
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-icons{
+        gap: 5px;
+    }
+    .search-icon{
+        display: none;
+    }
+
+
+.banner-content{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    padding: 0px 20px;
+
+}
+
+.banner-text{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.banner-title{
+    margin-top: 0px;
+    text-align: center;
+}
+
+.banner-description{
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.banner-text .btn-container{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 70px;
+}
+
+.btn-container .btn-primary{
+    margin-right: 10px;
+    
+}
+
+.banner-img-container{
+    max-width: 90%;
+    height: auto;
+    padding-bottom: 50px;
+    
+
+}
+
+.banner-img-container img{
+    max-width: 100%;
+    padding-top: 30px;
+}
+
+.sponsors-logo{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.sponsors-logo div{
+    justify-content: space-between;
+    gap: 15px;
+}
+.sponsors-logo{
+    flex-direction: column;
+}
+
+
+    
 }
