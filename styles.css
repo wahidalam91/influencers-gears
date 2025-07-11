@@ -199,11 +199,99 @@ nav{
     gap: 50px;
 }
 
+/* Main */
+main{
+    max-width: 1440px;
+    padding: 50px 150px;
+}
+
+/* Popular Collection */
+.popular-collection .section-title{
+    text-align: center;
+    color: rgb(58, 58, 58);
+    font-size: 1.75rem;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+.item-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.item-card{
+    margin: 0 auto;
+    padding: 17px 14px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);   
+    background: rgb(255, 255, 255);
+}
 
 
+.item-name{
+    margin-top: 16px;
+    color: rgb(24, 25, 31);
+    font-size: 1.75rem;
+    line-height: 40px;
+}
+
+.item-price{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 400;
+    
+}
+
+.item-ratings{
+    color: rgb(94, 99, 102);
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+
+.item-ratings img{
+    margin-right: 3px;
+}
+
+.half-star{
+    margin-bottom: -2.5px;
+    margin-left: -3px;
+}
+
+.about-item{
+    color: rgb(120, 120, 133);
+font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+line-height: 143%;
+letter-spacing: 1.8%;
+text-align: left;
+padding-bottom: 13px;
+}
 
 
+.pc-btn-container, .btn-primary{
+    background: transparent;
+    border: none;
+    color: rgb(224, 44, 109);
+    display: inline-block;
+    border-radius: 41px;
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: right;
+}
 
+.pc-btn-container{
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
 
 
 
@@ -305,6 +393,15 @@ nav{
     flex-direction: column;
 }
 
+main{
+    max-width: 100%;
+    padding: 25px;
+}
+
+.item-cards-container{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
 
     
 }
